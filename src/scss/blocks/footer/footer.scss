@@ -44,10 +44,15 @@
     }
 
     &__link {
+        color: #fff;
         flex-basis: 6.25rem;
         text-transform: uppercase;
         padding-bottom: 0.78rem;
         letter-spacing: 0.07rem;
+
+        &>a {
+            color: inherit;
+        }
 
         &:last-child {
             min-width: 100%;
@@ -58,6 +63,10 @@
         min-height: 100%;
         width: 11.7rem;
         flex-shrink: 0;
+    }
+
+    &__phone {
+        color: #fff;
     }
 
     &__contacts {
