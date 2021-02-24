@@ -12,3 +12,6 @@
 
 Оригинальный макет тут:\
 /src/img/Desktop.png
+
+Результат тут:\
+http://frontenddeveloper.ru/layouts/konstruct/
