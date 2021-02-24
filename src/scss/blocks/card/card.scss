@@ -1,0 +1,54 @@
+.card {
+    border: 1px solid $light_gray;
+
+    height: 20.625rem;
+    width: 18.4375rem;
+
+    padding: 2.35rem 1.4rem;
+
+    &__img {
+        display: block;
+        height: 4.6875rem;
+        width: 100%;
+        margin-bottom: 1.5625rem;
+        background-repeat: no-repeat;
+
+        &_project {
+            background-image: url(./../img/Capabilities/capabilities_project.png);
+        }
+
+        &_structure {
+            background-image: url(./../img/Capabilities/capabilities_structure.png);
+        }
+
+        &_factory {
+            background-image: url(./../img/Capabilities/capabilities_factory.png);
+        }
+    }
+
+    &__header {
+        font-size: 1rem;
+        letter-spacing: 0.025rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        line-height: 1.5;
+
+        padding-bottom: 0.8125rem;
+    }
+
+    &__text {
+        font-size: 0.8125rem;
+        letter-spacing: 0.01rem;
+        line-height: 1.4375rem;
+    }
+}
+
+@media screen and (max-width: 959px) {
+    .card {
+        border: none;
+        padding: none;
+        height: auto;
+        width: auto;
+
+    }
+}

@@ -1,0 +1,62 @@
+.jumbotron {
+    background-color: #000;
+    background-image: url("./../img/Bg/header_bg.jpg");
+    background-size: cover;
+
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    //justify-content: space-between;
+
+    padding: 2.5625rem 0 4.4375rem;
+
+    &__logo {
+        margin-bottom: 17.6rem;
+    }
+
+
+
+    &__title {
+        color: #fff;
+        letter-spacing: 0.363rem;
+        line-height: 0.6;
+        font-family: "BebasNeue", sans-serif;
+        font-size: 3.75rem;
+        font-weight: 700;
+        text-align: center;
+        text-transform: uppercase;
+
+        margin-bottom: 1.2rem;
+    }
+
+    &__subtitle {
+        color: #fff;
+        font-family: "OpenSans", sans-serif;
+        font-size: 1rem;
+        font-weight: 600;
+        letter-spacing: initial;
+        text-transform: initial;
+
+        margin-bottom: 13.9rem;
+    }
+
+    &__scroll-down {
+        color: #fff;
+        font-weight: 600;
+        font-size: 0.6875rem;
+        letter-spacing: 0.23125rem;
+        text-transform: uppercase;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .jumbotron__title {
+        line-height: 1.2em;
+    }
+
+    .jumbotron__subtitle {
+        line-height: 1.2rem;
+    }
+}

@@ -1,0 +1,128 @@
+.footer {
+    background-color: $dark;
+    color: #fff;
+    font-size: 0.685rem;
+
+    &__body {
+        display: flex;
+        align-items: flex-start;
+        padding: 2.625rem 0 2.4375rem;
+    }
+
+    &__description {
+        line-height: 1.1875rem;
+        letter-spacing: 0.052rem;
+    }
+
+    &__title {
+        letter-spacing: 0.053125rem;
+        font-size: 0.685rem;
+        font-weight: normal;
+        text-transform: uppercase;
+        width: 100%;
+
+        &_indent {
+            margin-bottom: 1rem;
+        }
+    }
+
+    &__company {
+        padding-right: 4.5rem;
+        width: 20rem;
+        flex-shrink: 0;
+
+        img {
+            margin: 0.1rem 0 0.9rem;
+        }
+    }
+
+    &__links {
+        display: flex;
+        flex-wrap: wrap;
+        width: 20rem;
+        flex-shrink: 0;
+    }
+
+    &__link {
+        flex-basis: 6.25rem;
+        text-transform: uppercase;
+        padding-bottom: 0.78rem;
+        letter-spacing: 0.07rem;
+
+        &:last-child {
+            min-width: 100%;
+        }
+    }
+
+    &__contact {
+        min-height: 100%;
+        width: 11.7rem;
+        flex-shrink: 0;
+    }
+
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        height: 7.8rem;
+
+        &>* {
+            display: block;
+            letter-spacing: 0.05rem;
+            line-height: 0.94rem;
+        }
+    }
+
+    &__address {
+        padding-right: 80px;
+    }
+
+    &__socials {
+        margin-top: 1.7rem;
+        display: flex;
+             width: 7rem;
+    }
+
+    &__social {
+        margin-right: 1.625rem;
+        min-width: 13px;
+        height: 13px;
+        background-repeat: no-repeat;
+
+        &_facebook {
+            background-image: url(./../img/Social/social.png);
+        }
+
+        &_twitter {
+            background-image: url(./../img/Social/social.png);
+            background-position: -13px 0;
+        }
+
+        &_google {
+            background-image: url(./../img/Social/social.png);
+            background-position: -26px 0;
+        }
+    }
+
+    &__bottom {
+        text-align: center;
+        background-color: $dark_gray;
+        letter-spacing: 0.055rem;
+        line-height: 3.9rem;
+    }
+}
+
+@media screen and (max-width: 959px) {
+    .footer__body {
+        flex-direction: column;
+        align-items: flex-start;
+        &>* {
+            margin-bottom: 2rem;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+
+body {
+  color: $gray;
+  font-family: "OpenSans", sans-serif;
+  position: relative;
+}
+
+.fixed-container {
+  width: 940px;
+  margin: 0 auto;
+}
+
+h2 {
+  color: $gray;
+
+  position: relative;
+
+  font-size: 1.125rem;
+  font-family: "OpenSans", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1444rem;
+
+  &::after {
+    position: absolute;
+    content: "";
+    background-color: #00a4e5;
+    bottom: -0.7rem;
+    left: 0;
+    height: 2px;
+    width: 3.2rem;
+  }
+}
+
+a {
+  color: $blue;
+  text-decoration: none;
+
+  &:hover,
+  &:active {
+    color: $blue;
+    text-decoration: underline;
+  }
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  background-color: $blue;
+  border: none;
+
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.8125rem;
+  letter-spacing: 0.03rem;
+
+  height: 2.5rem;
+  width: 9.375rem;
+
+  text-transform: uppercase;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+
+  &:hover {
+    background-color: #fff;
+    color: $blue;
+    border: 1px solid $blue;
+  }
+}
+
+@media screen and (max-width: 959px) {
+  html {
+    font-size: 14px;
+  }
+
+  .fixed-container {
+    width: auto;
+    padding: 0 1rem;
+  }
+}
+
+;
+
+@media screen and (max-width: 639px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+;

@@ -1,0 +1,67 @@
+.capabilities {
+  margin-bottom: 7.1875rem;
+
+  &__top {
+    display: flex;
+
+    &_indent {
+      margin: 7.46rem 0 4.7rem;
+    }
+  }
+
+  &__title {
+    width: 22.0625rem;
+    flex-shrink: 0;
+    padding: 0;
+    margin: 0;
+    height: 1.5rem;
+
+    &:after {
+      bottom: -0.7rem;
+    }
+  }
+
+  &__text {
+    font-size: 0.6875rem;
+    line-height: 1.13rem;
+    letter-spacing: 0.011875rem;
+    margin: 0;
+  }
+
+  &__button {
+    margin-left: 1.9rem;
+    flex-shrink: 0;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 959px) {
+.capabilities{
+  margin-bottom: 0;
+
+  &__title {
+    margin-bottom: 3rem;
+  }
+
+  &__text {
+    margin-bottom: 2rem;
+  }
+
+  &__top {
+    flex-direction: column;
+  }
+
+  &__button {
+    margin: 0;
+  }
+
+  &__list {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+}

@@ -1,0 +1,131 @@
+.story {
+    padding-bottom: 1rem;
+
+    &__body {
+        display: flex;
+        align-items: end;
+    }
+
+    &__title {
+        text-align: center;
+
+        &_indent {
+            margin: 4.7rem 0 4.28rem;
+        }
+
+        &::after {
+            left: 50%;
+            transform: translate(-50%, 0);
+        }
+    }
+
+     &__description {
+         padding-right: 4.76rem;
+     }
+
+    &__subtitle {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 1.35;
+        letter-spacing: 0.01rem;
+
+
+        a {
+            font-size: inherit;
+            font-weight: inherit;
+        }
+    }
+
+    &__text {
+        font-size: 0.875rem;
+        line-height: 1.4375rem;
+        letter-spacing: -0.02em;
+        padding-top: 1.87rem;
+    }
+
+    &__list {
+        display: flex;
+    }
+
+    &__item {
+        height: 14rem;
+        width: 8.75rem;
+        background-size: contain;
+
+        &_indent {
+            margin-left: 1.25rem;
+
+            &:first-child {
+                margin: 0;
+            }
+        }
+    }
+
+    &__link {
+        display: block;
+        height: 100%;
+        width: 100%;
+
+        color: #fff;
+
+        font-size: 1.5rem;
+        font-weight: 900;
+        text-transform: uppercase;
+
+        padding: 0.94rem 0.86rem;
+
+        transition: 0.1s;
+
+        cursor: pointer;
+
+        &:hover,
+        &:active {
+            outline: 1px solid $blue;
+
+            color: #fff;
+            text-decoration: none;
+        }
+
+        &_plan {
+            background-image: url(./../img/Story/we_plan.png);
+        }
+
+        &_manage {
+            background-image: url(./../img/Story/we_manage.png);
+        }
+
+        &_build {
+            background-image: url(./../img/Story/we_build.png);
+        }
+    }
+}
+
+@media screen and (max-width: 959px) {
+    .story__body {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .story__description {
+        margin-bottom: 3rem;
+    }
+
+    .story__item {
+        width: 8rem;
+    }
+
+    .story__link {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 359px) {
+    .story__item {
+        height: 14rem;
+
+    }
+
+    .story__item_indent {
+        margin-left: 0.25rem;
+    }
+}
